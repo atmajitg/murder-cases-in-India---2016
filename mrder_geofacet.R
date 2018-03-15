@@ -1,7 +1,7 @@
 library(geofacet)
 library(ggplot2)
 library(reshape2)
-setwd("C:\\Users\\agohil\\Documents\\NCRB_crime")
+setwd("")
 mrder = read.csv("murder.csv", stringsAsFactors = FALSE)
 colnames(mrder) <- c("state","2010","2011","2012","2013","2014","2015","2016")
 mrder= melt(mrder, id.vars = "state", variable.name = "year")
